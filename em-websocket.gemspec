@@ -19,7 +19,4 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-
-  s.add_dependency("eventmachine", ">= 0.12.9")
-  s.add_dependency("http_parser.rb", '~> 0.6.0')
 end
